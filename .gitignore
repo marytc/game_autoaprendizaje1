@@ -1,0 +1,6 @@
+# Archivos y carpetas de Unity
+[Ll]ibrary/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
