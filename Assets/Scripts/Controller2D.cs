@@ -3,30 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class Controller2D : MonoBehaviour
+public class Controller2D : RaycastController
 {
-    public LayerMask collisionMask;     // Máscara de colisión para detectar qué objetos 
 
-    const float skinWidth = .015f;      // Ancho del raycast
-    public int horizontalRayCount = 4;  // Número de rayos horizontales
-    public int verticalRayCount = 4;    // Número de rayos verticales
-
-    float horizontalRaySpacing; // Espaciado entre rayos horizontales
-    float verticalRaySpacing;
-
-    BoxCollider2D collider;
-    RaycastOrigins raycastOrigins;
     public CollisionInfo collisions;
 
-    void Start()
+    public override void Start()
     {
-        collider = GetComponent<BoxCollider2D>();
-        CalculateRaySpacing();  // Calcula el espaciado de los rayos
+        base.Start();
     }
 
     // Metodo para mover al jugador
-    public void Move(Vector3 velocity)
+    public void Move(Vector3 velocity, bool standingOnPlatform = false)
     {
         UpdateRaycastOrigins();
         collisions.Reset();
@@ -43,6 +31,11 @@ public class Controller2D : MonoBehaviour
         }
 
         transform.Translate(velocity);      // Mueve al jugador
+
+        if (standingOnPlatform)
+        {
+            collisions.below = true;
+        }
     }
 
     // Gestiona colisiones Horizontales
@@ -63,6 +56,10 @@ public class Controller2D : MonoBehaviour
             // Si hay una colisión
             if (hit)
             {
+                if (hit.distance == 0)
+                {
+                    continue;
+                }
                 velocity.x = (hit.distance - skinWidth) * directionX;   // Calcula la velocidad
                 rayLength = hit.distance;   // Actualiza la longitud del rayo
 
@@ -71,6 +68,7 @@ public class Controller2D : MonoBehaviour
             }
         }
     }
+
 
     void VerticalCollisions(ref Vector3 velocity)
     {
@@ -99,39 +97,14 @@ public class Controller2D : MonoBehaviour
         }
     }
 
-    void UpdateRaycastOrigins()
-    {
-        Bounds bounds = collider.bounds;
-        bounds.Expand(skinWidth * -2);
 
-        raycastOrigins.bottomLeft = new Vector2(bounds.min.x, bounds.min.y);
-        raycastOrigins.bottomRight = new Vector2(bounds.max.x, bounds.min.y);
-        raycastOrigins.topLeft = new Vector2(bounds.min.x, bounds.max.y);
-        raycastOrigins.topRight = new Vector2(bounds.max.x, bounds.max.y);
-    }
 
-    void CalculateRaySpacing()
-    {
-        Bounds bounds = collider.bounds;
-        bounds.Expand(skinWidth * -2);
 
-        horizontalRayCount = Mathf.Clamp(horizontalRayCount, 2, int.MaxValue);
-        verticalRayCount = Mathf.Clamp(verticalRayCount, 2, int.MaxValue);
-
-        horizontalRaySpacing = bounds.size.y / (horizontalRayCount - 1);
-        verticalRaySpacing = bounds.size.x / (verticalRayCount - 1);
-    }
-
-    struct RaycastOrigins
-    {
-        public Vector2 topLeft, topRight;
-        public Vector2 bottomLeft, bottomRight;
-    }
-
+    // Estructura para almacenar la información de colisión
     public struct CollisionInfo
     {
-        public bool above, below;
-        public bool left, right;
+        public bool above, below; // Indica si hay colisión arriba o abajo
+        public bool left, right;  // Indica si hay colisión a la izquierda o derecha
 
         public void Reset()
         {
