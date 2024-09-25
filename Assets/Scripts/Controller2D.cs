@@ -58,7 +58,7 @@ public class Controller2D : RaycastController
             {
                 if (hit.distance == 0)
                 {
-                    continue;
+                   //continue;
                 }
                 velocity.x = (hit.distance - skinWidth) * directionX;   // Calcula la velocidad
                 rayLength = hit.distance;   // Actualiza la longitud del rayo

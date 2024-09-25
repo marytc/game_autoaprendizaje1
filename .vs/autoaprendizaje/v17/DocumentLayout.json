@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|c:\\users\\lenovo\\onedrive - universidad privada del valle\\3semestre.2024\\gamedevelopmen\\autoaprendizaje1\\autoaprendizaje\\assets\\scripts\\controller2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\assets\\scripts\\platformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\platformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\assets\\scripts\\raycastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\raycastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\assets\\scripts\\platformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\platformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\assets\\scripts\\controller2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|c:\\users\\lenovo\\onedrive - universidad privada del valle\\3semestre.2024\\gamedevelopmen\\autoaprendizaje1\\autoaprendizaje\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2109F0-4E32-FB56-5217-1D80644A8FF5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,13 +34,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T01:36:28.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Controller2D.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\Assets\\Scripts\\Controller2D.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller2D.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\Assets\\Scripts\\Controller2D.cs",
               "RelativeToolTip": "Assets\\Scripts\\Controller2D.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T15:05:25.139Z",
               "EditorCaption": ""
@@ -53,35 +66,23 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\RaycastController.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\Assets\\Scripts\\RaycastController.cs",
               "RelativeToolTip": "Assets\\Scripts\\RaycastController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T02:16:17.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PlatformController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\Assets\\Scripts\\PlatformController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlatformController.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\Assets\\Scripts\\PlatformController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlatformController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T02:14:39.13Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\Assets\\Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
-              "ToolTip": "C:\\Users\\lenovo\\OneDrive - Universidad Privada del Valle\\3semestre.2024\\gameDevelopmen\\autoaprendizaje1\\autoaprendizaje\\Assets\\Scripts\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T18:06:19.693Z"
             }
           ]
         }

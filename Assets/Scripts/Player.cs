@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player : MonoBehaviour
 {
     public float jumpHeight = 4;
@@ -16,9 +17,11 @@ public class Player : MonoBehaviour
     float velocityXSmoothing;
 
     Controller2D controller;        // Control raycast y colisiones
+   
 
     void Start()
     {
+       
         controller = GetComponent<Controller2D>();
 
         gravity = -(2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2); // Calcula gravedad para que el jugador pueda alcanzar una altura máxima al saltar
@@ -49,4 +52,14 @@ public class Player : MonoBehaviour
         controller.Move(velocity * Time.deltaTime); // Actualiza la posición del jugador según la velocidad calculada
 
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Meta"))
+        {
+            Destroy(gameObject); //en esta funcion destruye el player y pasa al siguiente nivel
+
+        }
+    }
+
 }
